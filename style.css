@@ -1,0 +1,193 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font: 2rem;
+  font-weight: bold;
+}
+
+.header,
+.hero {
+  background-color: green;
+  color: black;
+  padding: 2rem;
+  align-self: stretch;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: burlywood;
+}
+
+.container {
+  background-color: burlywood;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.herotext {
+  max-width: 25rem;
+}
+
+.herotext .title, legend {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero > img {
+  width: 25rem;
+  height: 12.5rem;
+  object-fit: scale-down;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.selected {
+  background-color: black;
+  color: green;
+}
+
+.infotitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 15rem;
+  padding: 32px;
+}
+
+.cardTitle {
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card input {
+  width: 15rem;
+  height: auto;
+  object-fit: scale-down;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.card input:hover {
+  border: 2px solid green;
+}
+
+.back {
+  font-weight: bold;
+}
+
+.text {
+  text-align: justify;
+}
+
+.cert {
+  background-color: #e5e7eb;
+  padding: 2rem 10rem;
+  text-align: justify;
+}
+
+.cert img {
+  height: 15rem;
+  
+}
+
+.cert p:first-of-type{
+  font-weight: bold;
+}
+
+.footer {
+  background-color: green;
+  align-self: stretch;
+  text-align: center;
+  padding: 2rem;
+  font-size: small;
+  position: sticky;
+  bottom: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  gap: 1em;
+}
+
+div.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.form  {
+  display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+form input, textarea {
+  margin-bottom: 0.5rem;
+}
+
+form p {
+  font-weight: bold;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+input:focus + label, textarea:focus + label  {
+font-weight: bold;
+}
+
+button {
+  border: none;
+  border-radius: 1rem;
+  background-color: whitesmoke;
+  font-size: 1rem;
+} 
+
+button:hover{
+  background-color: orangered;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+}
