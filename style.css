@@ -46,7 +46,7 @@ a:hover {
 }
 
 .herotext .title, legend {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
@@ -112,7 +112,7 @@ a:hover {
 
 .cert {
   background-color: #e5e7eb;
-  padding: 2rem 10rem;
+  padding: 2rem;
   text-align: justify;
 }
 
