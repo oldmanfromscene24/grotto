@@ -191,3 +191,16 @@ button:hover{
     object-fit: scale-down;
   }
 }
+
+.image {
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+
+.image:hover {
+    transform: scale(1.5);
+    transform-origin: center;
+    z-index: 1;
+    max-width: 100vw;
+    max-height: 100vh;
+}
